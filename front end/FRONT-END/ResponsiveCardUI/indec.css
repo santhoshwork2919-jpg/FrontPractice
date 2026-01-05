@@ -1,0 +1,10 @@
+.card{
+    width: 280px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card img{border-radius: 50%; box-sizing: content-box;}
+      button{padding: 8px 16px; border-radius: 8px; border: none;}
