@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    
+    <title>SIMPLE DELETE </title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h1>ADD & DELETE</h1>
+
+    <input type="text" placeholder="ENTER TEXT" id="input" >
+
+    <button onclick="additem()">ADD</button>
+
+    <ul id="list"></ul>
+
+
+<script> 
+
+function additem(){
+
+ let input = document.getElementById("input");
+
+ let lists = document.getElementById("list");
+  
+ let li = document.createElement("li")
+
+ li.innerHTML = `${input.value}
+<button onclick="deleteItem(this)">Delete</button>`;
+
+lists.appendChild(li);
+
+input.value="";
+
+}
+
+function deleteItem(button){
+    button.parentElement.remove();
+}
+
+</script>
+
+    
+</body>
+</html>
